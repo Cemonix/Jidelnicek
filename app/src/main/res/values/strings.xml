@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Jidelnicek</string>
+    <string name="lunch_list">Seznam obědů</string>
+    <string name="add_lunch">Nový oběd</string>
+    <string name="lunch_select">Výběr obědů</string>
+    <string name="remove_lunch">Odebrat oběd</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lunch_name">Název oběda</string>
+    <string name="lunch_span">Počet dnů</string>
+    <string name="lunch_type">Typ oběda</string>
+    <string name="one">Jeden</string>
+    <string name="two">Dva</string>
+    <string name="lunch_insert">Přidat oběd</string>
+    <string name="all_days">Všechny</string>
+    <string name="select">Zobrazit</string>
+    <string name="lunch_types">Typy obědů</string>
+    <string name="lunch_ids">Id obědů</string>
+    <string name="back">Zpět</string>
+    <string name="create_list">Vytvořit jídelníček</string>
+    <string name="day_in_week">Den v týdnu</string>
+    <string name="monday">Pondělí</string>
+    <string name="tuesday">Úterý</string>
+    <string name="wednesday">Středa</string>
+    <string name="thuersday">Čtvrtek</string>
+    <string name="friday">Pátek</string>
+    <string name="saturday">Sobota</string>
+    <string name="sunday">Neděle</string>
+    <string name="lunch_creator">Jídelníček</string>
+    <string name="choose">Vybrat</string>
+    <string name="take_screenshot">Uložit jídelníček jako jpeg</string>
+</resources>

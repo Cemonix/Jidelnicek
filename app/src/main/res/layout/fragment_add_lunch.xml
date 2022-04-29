@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00A8F4"
+    tools:context=".AddLunchFragment">
+
+    <EditText
+        android:id="@+id/pt_lunch_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="400dp"
+        android:autofillHints="Lunch_name"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="@string/lunch_name"
+        android:inputType="text|textAutoCorrect"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pt_lunch_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="Lunch_type"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="@string/lunch_type"
+        android:inputType="text|textAutoCorrect"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_lunch_name" />
+
+    <TextView
+        android:id="@+id/tv_lunch_span"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/lunch_span"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_lunch_type" />
+
+    <RadioGroup
+        android:id="@+id/rbg_lunch_span"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lunch_span">
+
+        <RadioButton
+            android:id="@+id/rb_one_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0022FF"
+            android:checked="true"
+            android:text="@string/one"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+        <RadioButton
+            android:id="@+id/rb_two_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0022FF"
+            android:checked="false"
+            android:text="@string/two"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_lunch_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/lunch_insert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbg_lunch_span"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <Button
+        android:id="@+id/btn_add_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lunch_insert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
